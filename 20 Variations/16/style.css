@@ -1,0 +1,43 @@
+/* Fonts from Google Fonts - more at https://fonts.google.com */
+@import url('https://fonts.googleapis.com/css?family=Charmonman" rel="stylesheet');
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,700');
+
+
+body {
+  background-color: 	#DC143C;
+  background-image: url("paper.gif")
+    font-family: 'Charmonman', cursive;
+  font-family: 'Raleway', sans-serif;
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-family: 'Anton', sans-serif;
+
+  padding: 5px 25px;
+  font-size: 24px;
+  margin: 0;
+  color: #444;
+}
+
+h1 {
+  font-family: 'Charmonman', cursive;
+  font-family: 'Raleway', sans-serif;
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-family: 'Anton', sans-serif;
+
+  font-size: 66px;
+  color: azure
+}
+p1 { 
+  color: darkgrey;
+  front-size: px;
+}
+
+p2 {
+  
+}
+
+p3 { 
+  color: azure;
+  border-style: solid;
+  border-width: 1px;
+  
+}
