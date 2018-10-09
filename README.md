@@ -1,2 +1,0 @@
-# creativecomputing
-place for files
