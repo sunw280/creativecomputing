@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Map a journey</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Final Project: Map a Journey</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>Weekend Jorney ☻....</h1>
+    <p>
+</p>
+    <div class="slideshow-container">
+
+      <div class="mySlides fade">
+        <img src="https://newschool.imgix.net/Media/Resources/Content/Admissions/032815_New_Identity_Launch_120.jpg?n=7511" style="width:100%">
+      </div>
+
+      <div class="mySlides fade">
+        <center> <img src="https://cdn-img0.streeteasy.com/nyc/image/12/320380312.jpg" style="width:100%"> </center>
+      </div>
+
+      <div class="mySlides fade">
+        <center> <img src="https://cmsplatypus.gothamist.com/gothamistgallery/2018/7/2/d519147fcbluestripes-1-jpg-web_gallery.jpeg" style="width:100%"> </center>
+      </div>
+   <div class="mySlides fade">
+        <center> <img src="https://s3-media4.fl.yelpcdn.com/bphoto/UIf9VFRCQDLvYNDyKRtCXg/o.jpg" style="width:100%"> </center>
+      </div>
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+ <div style="text-align:center"> 
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span> 
+      <span class="dot" onclick="currentSlide(4)"></span> 
+    </div>
+      <a href="file:///Users/rosiesun/Desktop/finalcoding/stop1.html" class="button1">stop#1♡</a>
+      <a href="file:///Users/rosiesun/Desktop/finalcoding/stop2.html" class="button2">stop#2♡</a>
+      <a href="file:///Users/rosiesun/Desktop/finalcoding/stop3/stop3.html" class="button3">stop#3♡</a>
+      <a href="file:///Users/rosiesun/Desktop/finalcoding/stop4.html" class="button4">stop#4♡</a>
+           
+<!-- JS --!>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/featherlight/1.7.13/featherlight.min.js'></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/featherlight/1.7.13/featherlight.gallery.min.js" type="text/javascript" charset="utf-8"></script>
+
+<script> 
+$(document).ready(function(){
+$('.gallery').featherlightGallery();
+});
+
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+var i;
+var slides = document.getElementsByClassName("mySlides");
+var dots = document.getElementsByClassName("dot");
+if (n > slides.length) {slideIndex = 1}    
+if (n < 1) {slideIndex = slides.length}
+for (i = 0; i < slides.length; i++) {
+slides[i].style.display = "none";  
+}
+slideIndex++;
+if (slideIndex > slides.length) {slideIndex = 1}    
+for (i = 0; i < dots.length; i++) {
+dots[i].className = dots[i].className.replace(" active", "");
+}
+slides[slideIndex-1].style.display = "block";  
+dots[slideIndex-1].className += " active";
+setTimeout(showSlides, 3000); // Change image every 3 seconds
+}
+</script>
+
+</html>
+  
+  
+
+</body>
+
+</html>
