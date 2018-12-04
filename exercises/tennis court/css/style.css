@@ -1,0 +1,57 @@
+.court {
+  width: 780px;
+  height: 360px;
+  display: block;
+  transform: rotate(90deg);
+}
+.court_grid {
+  display: grid;
+  height: 100%;
+  border: solid 1px white;
+  grid-template-columns: repeat(26, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+ }
+.court_cell {
+  background: black;
+  box-shadow: inset 0 0 0 2px white;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+.court_alley-top-left {
+  grid-column: 1 / 14;
+}
+.court_alley-top-right {
+  grid-column: 14 / 27;
+}
+.court_nml-left {
+  grid-row: 2 / 8;
+  grid-column: 1 / 7;
+}
+
+.court_ad-left {
+  grid-row: 2 / 5;
+  grid-column: 7 / 14;
+}
+.court_ad-right {
+  grid-row: 2 / 5;
+  grid-column: 14 / 21;
+}
+.court_dc-left {
+  grid-row: 5 / 8;
+  grid-column: 7 / 14;
+}
+.court_dc-right {
+  grid-row: 5 / 8;
+  grid-column: 14 / 21;
+}
+.court_nml-right {
+  grid-row: 2 / 8;
+  grid-column: 21 / 27;
+}
+.court_alley-bottom-left {
+  grid-column: 1 / 14;
+}
+.court_alley-bottom-right {
+  grid-column: 14 / 27;
+}
